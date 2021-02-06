@@ -1,0 +1,2 @@
+include ':apphuixian'
+rootProject.name = "NUMAD20F-HuixianZhang"
