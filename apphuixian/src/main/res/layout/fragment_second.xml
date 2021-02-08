@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="onclick"
     tools:context=".SecondFragment">
 
     <RadioButton
@@ -15,6 +14,7 @@
         android:layout_marginTop="136dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="235dp"
+        android:onClick="onClickF"
         android:text="F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,6 +29,7 @@
         android:layout_marginTop="241dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="40dp"
+        android:onClick="onClickC"
         android:text="C"
         app:layout_constraintBottom_toTopOf="@+id/radioButton6"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,6 +45,7 @@
         android:layout_marginTop="136dp"
         android:layout_marginEnd="21dp"
         android:layout_marginBottom="171dp"
+        android:onClick="onClickE"
         android:text="E"
         app:layout_constraintBottom_toTopOf="@+id/button_second"
         app:layout_constraintEnd_toStartOf="@+id/radioButton6"
@@ -58,6 +60,7 @@
         android:layout_marginTop="136dp"
         android:layout_marginEnd="21dp"
         android:layout_marginBottom="235dp"
+        android:onClick="onClickD"
         android:text="D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/radioButton4"
@@ -73,6 +76,7 @@
         android:layout_marginTop="219dp"
         android:layout_marginEnd="21dp"
         android:layout_marginBottom="40dp"
+        android:onClick="onClickB"
         android:text="B"
         app:layout_constraintBottom_toTopOf="@+id/radioButton4"
         app:layout_constraintEnd_toStartOf="@+id/radioButton5"
@@ -108,11 +112,36 @@
         android:layout_marginTop="219dp"
         android:layout_marginEnd="21dp"
         android:layout_marginBottom="40dp"
-        android:onClick="OnClick"
+        android:onClick="onClick"
         android:text="A"
         app:layout_constraintBottom_toTopOf="@+id/radioButton3"
         app:layout_constraintEnd_toStartOf="@+id/radioButton2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview_second"
         app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="78dp"
+        android:text=" "
+        app:layout_constraintBottom_toTopOf="@+id/button_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton4"
+        app:layout_constraintVertical_bias="0.401" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="TextView"-->
+<!--        tools:layout_editor_absoluteX="176dp"-->
+<!--        tools:layout_editor_absoluteY="592dp" />-->
+
 </androidx.constraintlayout.widget.ConstraintLayout>
