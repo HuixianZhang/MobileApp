@@ -1,5 +1,6 @@
 package com.example.numad20f_huixianzhang;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -16,6 +17,15 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.TextView;
+
+
+// page1 -> page2 -> page3
+
+// page1 -> page2
+//       -> page3
+//       -> page4
+
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -123,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
         textView = findViewById(R.id.textView3);
         switch (id) {
             case R.id.radioButton3:
-                textView.setText("Pressed D");
+                textView.setText("Pressed E");
                 break;
         }
     }
@@ -133,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
         textView = findViewById(R.id.textView3);
         switch (id) {
             case R.id.radioButton4:
-                textView.setText("Pressed E");
+                textView.setText("Pressed D");
                 break;
         }
     }
@@ -146,6 +156,14 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText("Pressed F");
                 break;
         }
+    }
+
+//    Intent intent = new Intent(this, Assign3.class);
+
+    public void onClickAssign3(View view)
+    {
+        Intent intent = new Intent(this, Assign3.class);
+        startActivity(intent);
     }
 
 

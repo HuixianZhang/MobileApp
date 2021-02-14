@@ -6,82 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".SecondFragment">
 
+
     <RadioButton
         android:id="@+id/radioButton6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="235dp"
+        android:layout_marginTop="70dp"
         android:onClick="onClickF"
         android:text="F"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/radioButton4"
+        app:layout_constraintStart_toStartOf="@+id/radioButton5"
         app:layout_constraintTop_toBottomOf="@+id/radioButton5" />
 
     <RadioButton
         android:id="@+id/radioButton5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="241dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginTop="59dp"
         android:onClick="onClickC"
         android:text="C"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/radioButton2"
-        app:layout_constraintTop_toTopOf="@id/textview_second" />
-
+        app:layout_constraintStart_toEndOf="@+id/textview_second"
+        app:layout_constraintTop_toBottomOf="@+id/textview_second" />
 
     <RadioButton
         android:id="@+id/radioButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginBottom="171dp"
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="78dp"
         android:onClick="onClickE"
-        android:text="E"
+        android:text="D"
         app:layout_constraintBottom_toTopOf="@+id/button_second"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton6"
-        app:layout_constraintStart_toEndOf="@+id/radioButton3"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
+        app:layout_constraintEnd_toStartOf="@+id/textview_second"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/radioButton"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton"
+        app:layout_constraintVertical_bias="0.0" />
 
     <RadioButton
         android:id="@+id/radioButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginBottom="235dp"
         android:onClick="onClickD"
-        android:text="D"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton4"
-        app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+        android:text="E"
+        app:layout_constraintBottom_toBottomOf="@+id/radioButton6"
+        app:layout_constraintStart_toStartOf="@+id/radioButton2"
+        app:layout_constraintTop_toTopOf="@+id/radioButton6" />
 
     <RadioButton
         android:id="@+id/radioButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="219dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginBottom="40dp"
         android:onClick="onClickB"
         android:text="B"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton4"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton5"
-        app:layout_constraintStart_toEndOf="@+id/radioButton"
-        app:layout_constraintTop_toBottomOf="@+id/textview_second" />
+        app:layout_constraintBottom_toBottomOf="@+id/radioButton5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/radioButton5" />
 
     <TextView
         android:id="@+id/textview_second"
@@ -108,40 +90,29 @@
         android:id="@+id/radioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="219dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="3dp"
         android:onClick="onClick"
         android:text="A"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton3"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview_second"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintBottom_toBottomOf="@+id/radioButton2"
+        app:layout_constraintEnd_toStartOf="@+id/textview_second"
+        app:layout_constraintTop_toTopOf="@+id/radioButton2" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="165dp"
-        android:layout_marginTop="61dp"
-        android:layout_marginEnd="165dp"
-        android:layout_marginBottom="78dp"
-        android:text=" "
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/button_second"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton4"
-        app:layout_constraintVertical_bias="0.401" />
+        app:layout_constraintStart_toStartOf="@+id/button_second" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/textView3"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="TextView"-->
-<!--        tools:layout_editor_absoluteX="176dp"-->
-<!--        tools:layout_editor_absoluteY="592dp" />-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView3"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="TextView"-->
+    <!--        tools:layout_editor_absoluteX="176dp"-->
+    <!--        tools:layout_editor_absoluteY="592dp" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
