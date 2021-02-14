@@ -177,7 +177,8 @@ public class Assign3 extends AppCompatActivity {
     }
 
     private void addItem(int position) {
-        itemList.add(position, new ItemCard(R.drawable.empty, "No Logo item", "Item id: " + Math.abs(new Random().nextInt(100000)), false));
+//        itemList.add(position, new ItemCard(R.drawable.empty, "No Logo item", "Item id: " + Math.abs(new Random().nextInt(100000)), false));
+        itemList.add(position, new ItemCard(R.drawable.empty, "URL:", "Name: ", false));
         Toast.makeText(Assign3.this, "Add an item", Toast.LENGTH_SHORT).show();
 
         rviewAdapter.notifyItemInserted(position);
