@@ -3,13 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="2dp"
+    android:layout_margin="1dp"
     app:cardCornerRadius="5dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/buttonsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/item_desc"
+            android:layout_below="@+id/buttongo"
+            android:text="Save" />
 
         <EditText
             android:id="@+id/item_desc"
@@ -37,31 +46,31 @@
             android:id="@+id/item_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="12"
             android:layout_toEndOf="@+id/item_icon"
+            android:ems="12"
             android:text="URL" />
-<!--        <TextView-->
-<!--            android:id="@+id/item_name"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="10dp"-->
-<!--            android:layout_marginTop="7dp"-->
-<!--            android:layout_toEndOf="@+id/item_icon"-->
-<!--            android:text="@string/item_name"-->
-<!--            android:textColor="@android:color/black"-->
-<!--            android:textSize="15sp"-->
-<!--            android:textStyle="bold" />-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/item_name"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="10dp"-->
+        <!--            android:layout_marginTop="7dp"-->
+        <!--            android:layout_toEndOf="@+id/item_icon"-->
+        <!--            android:text="@string/item_name"-->
+        <!--            android:textColor="@android:color/black"-->
+        <!--            android:textSize="15sp"-->
+        <!--            android:textStyle="bold" />-->
 
 
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@+id/item_name"-->
-<!--            android:layout_toEndOf="@+id/item_icon"-->
-<!--            android:layout_marginStart="10dp"-->
-<!--            android:layout_marginTop="5dp"-->
-<!--            android:id="@+id/item_desc"-->
-<!--            android:text="@string/item_description" />-->
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/item_name"-->
+        <!--            android:layout_toEndOf="@+id/item_icon"-->
+        <!--            android:layout_marginStart="10dp"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:id="@+id/item_desc"-->
+        <!--            android:text="@string/item_description" />-->
 
         <CheckBox
             android:id="@+id/checkbox"
@@ -69,7 +78,16 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="47dp"
             android:layout_marginTop="13dp"
-            android:layout_toEndOf="@+id/item_name" />
+            android:layout_toEndOf="@+id/item_name"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/buttongo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_toEndOf="@+id/item_name"
+            android:text="GO" />
 
     </RelativeLayout>
 

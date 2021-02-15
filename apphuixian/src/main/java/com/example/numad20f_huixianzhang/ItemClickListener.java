@@ -6,4 +6,6 @@ public interface ItemClickListener {
 
     void onCheckBoxClick(int position);
 
+    void onButtonClick(int position);
+
 }

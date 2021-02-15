@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -89,10 +90,17 @@ public class Assign3 extends AppCompatActivity {
             outState.putInt(KEY_OF_INSTANCE + i + "0", itemList.get(i).getImageSource());
             // put itemName information into instance
             outState.putString(KEY_OF_INSTANCE + i + "1", itemList.get(i).getItemName());
+
+
+            Log.e("MSG",itemList.get(i).getItemName());
+            int idx = 1;
+
             // put itemDesc information into instance
             outState.putString(KEY_OF_INSTANCE + i + "2", itemList.get(i).getItemDesc());
             // put isChecked information into instance
             outState.putBoolean(KEY_OF_INSTANCE + i + "3", itemList.get(i).getStatus());
+
+
         }
         super.onSaveInstanceState(outState);
 
@@ -119,12 +127,13 @@ public class Assign3 extends AppCompatActivity {
                     String itemDesc = savedInstanceState.getString(KEY_OF_INSTANCE + i + "2");
                     boolean isChecked = savedInstanceState.getBoolean(KEY_OF_INSTANCE + i + "3");
 
+
                     // We need to make sure names such as "XXX(checked)" will not duplicate
                     // Use a tricky way to solve this problem, not the best though
                     if (isChecked) {
                         itemName = itemName.substring(0, itemName.lastIndexOf("("));
                     }
-                    ItemCard itemCard = new ItemCard(imgId, itemName, itemDesc, isChecked);
+                    ItemCard itemCard = new ItemCard(imgId, itemName, itemDesc, isChecked );
 
                     itemList.add(itemCard);
                 }
@@ -166,6 +175,11 @@ public class Assign3 extends AppCompatActivity {
                 itemList.get(position).onCheckBoxClick(position);
 
                 rviewAdapter.notifyItemChanged(position);
+            }
+
+            @Override
+            public void onButtonClick(int position) {
+                itemList.get(position).onButtonClick(position);
             }
         };
         rviewAdapter.setOnItemClickListener(itemClickListener);

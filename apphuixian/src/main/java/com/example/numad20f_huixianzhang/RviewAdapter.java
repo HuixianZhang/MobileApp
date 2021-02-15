@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class RviewAdapter extends RecyclerView.Adapter<RviewHolder> {
 
-    private final ArrayList<ItemCard> itemList;
+    private ArrayList<ItemCard> itemList;
     private ItemClickListener listener;
 
     //Constructor
@@ -34,7 +34,9 @@ public class RviewAdapter extends RecyclerView.Adapter<RviewHolder> {
     public void onBindViewHolder(RviewHolder holder, int position) {
         ItemCard currentItem = itemList.get(position);
 
+
         holder.itemIcon.setImageResource(currentItem.getImageSource());
+//        holder.itemName.setText(currentItem.getItemName());
         holder.itemName.setText(currentItem.getItemName());
         holder.itemDesc.setText(currentItem.getItemDesc());
         holder.checkBox.setChecked(currentItem.getStatus());
