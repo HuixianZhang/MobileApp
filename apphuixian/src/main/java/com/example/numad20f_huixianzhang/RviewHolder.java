@@ -1,6 +1,8 @@
 package com.example.numad20f_huixianzhang;
 
+import android.util.Patterns;
 import android.view.View;
+import android.webkit.URLUtil;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
@@ -110,14 +112,18 @@ public class RviewHolder extends RecyclerView.ViewHolder {
 //                        Toast.makeText(v.getContext(),"Go successfully",Toast.LENGTH_LONG).show();
                         String URL = itemName.getText().toString();
                         Uri uri = Uri.parse(URL);
-
-                        //https://
-                        //http
-                        // TODO
-                        //    URL IS VALID OR NOT
-
+                        if (!Patterns.WEB_URL.matcher(URL).matches()) {
+                            //validation msg
+                            Toast.makeText(v.getContext(),"Link not avaliable",Toast.LENGTH_LONG).show();
+                            return;
+                        }
                         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                         v.getContext().startActivity(intent);
+
+//                        Patterns.WEB_URL.matcher(uri).matches();
+
+//                        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+//                        v.getContext().startActivity(intent);
 
                     }
                 }
