@@ -28,7 +28,8 @@
             android:layout_toEndOf="@+id/item_icon"
             android:ems="12"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:text="Name"
+            android:saveEnabled="false" />
 
         <ImageView
             android:id="@+id/item_icon"
@@ -48,7 +49,8 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/item_icon"
             android:ems="12"
-            android:text="URL" />
+            android:text="URL"
+            android:saveEnabled="false" />
         <!--        <TextView-->
         <!--            android:id="@+id/item_name"-->
         <!--            android:layout_width="wrap_content"-->

@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_zhang_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Assign3" />
+        <activity android:name=".Assign3"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:configChanges="orientation|screenSize|keyboardHidden"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
