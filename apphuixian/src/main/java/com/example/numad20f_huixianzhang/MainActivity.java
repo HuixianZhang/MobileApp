@@ -166,6 +166,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onClickAssign4(View view)
+    {
+        Intent intent = new Intent(this, Assign4.class);
+        startActivity(intent);
+    }
+
 
 }
 

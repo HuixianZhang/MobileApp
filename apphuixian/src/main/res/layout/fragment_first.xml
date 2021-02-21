@@ -34,8 +34,17 @@
         android:onClick="onClickAssign3"
         android:text="Assign3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="341dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="331dp" />
+
+    <Button
+        android:id="@+id/buttonA4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="onClickAssign4"
+        android:text="Assign4"
+        app:layout_constraintBottom_toTopOf="@+id/button_first"
+        app:layout_constraintStart_toStartOf="@+id/button_first" />
 </androidx.constraintlayout.widget.ConstraintLayout>
