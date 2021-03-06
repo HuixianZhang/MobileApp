@@ -172,6 +172,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onClickAssign5(View view)
+    {
+        Intent intent = new Intent(this, Assign5.class);
+        startActivity(intent);
+    }
+
 
 }
 

@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_zhang_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Assign4"></activity>
+        <activity android:name=".Assign5"></activity>
+        <activity android:name=".Assign4" />
         <activity
             android:name=".Assign3"
             android:configChanges="orientation|screenSize|keyboardHidden" />
